@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/debjohnson33/testRepo#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
     "chai": "^4.2.0",
     "mocha": "^8.0.1"
   }
