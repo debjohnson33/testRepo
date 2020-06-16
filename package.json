@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha \"src/**/*/test.js\" --recursive --require @babel/register --require @babel/polyfill"
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,6 @@
     "@babel/preset-env": "^7.10.2",
     "@babel/register": "^7.10.1",
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "mocha": "^6.2.0"
   }
 }
