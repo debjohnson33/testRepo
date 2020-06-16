@@ -2,5 +2,12 @@
 // ignore spaces
 // ignore case
 export const isAnagram = (str1, str2) => {
-
+  if (str1 === '' || str2 === '') {
+    return false;
+  }
+  let sorted1 = str1.split('').sort().join('').toLowerCase();
+  let sorted2 = str2.split('').sort().join('').toLowerCase();
+  if (sorted1 === sorted2) {
+    return true;
+  }
 }
