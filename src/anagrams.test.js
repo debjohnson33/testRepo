@@ -16,4 +16,17 @@ describe('isAnagram - basic functionality', () => {
     const actual = isAnagram('state', 'taste');
     expect(actual).to.equal(expected);
   });
+
+  it('returns true if either or both strings have spaces', () => {
+    const expected = true;
+    const actual = isAnagram('conversation', 'voices rant on');
+    expect(actual).to.equal(expected);
+  });
+
+  it('returns true if either or both strings have any capital letters', () => {
+    const expected = true;
+    const actual = isAnagram('STATE', 'taste');
+    expect(actual).to.equal(expected);
+  });
+
 })
